@@ -341,7 +341,7 @@ padding-bottom: 1rem;
 
 .-L {text-align:left;}
 .-C {text-align:center!important; }
-.cartadevinos.TITLE, .cartadepostres.TITLE {margin: 6rem auto 0;}
+.menuitemcontainer.TITLE, .cartadevinos.TITLE, .cartadepostres.TITLE {margin: 3rem auto 0;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding:0}
 .expandish .wine img {width:unset; height: unset; }
@@ -360,8 +360,8 @@ a.FINDUS {text-decoration: none;}
 @media only screen and (max-width: 900px) {
 
 .menuitemcontainer { -moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; }
-.UK, .ES, .FR, .CT {margin: 0 1rem; width: 3rem; height:5rem;}
-.BOTONERA {top: 4.15rem;}
+.UK, .ES, .FR, .CT, .DE, .NE, .RU {margin: 0 0.5rem; width: 3rem; height:5rem;}
+.BOTONERA {top: 4.5rem;}
 .expandish {min-width: 98%;}
 /**FONDO DE COLOR**/
 .layer {background-color: rgba(134, 65, 56, 0.7);

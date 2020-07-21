@@ -116,13 +116,13 @@ $('.RU').on('click', function() {
 $(document).ready(function() {
 
 var display = function(block_name) {
-  $('.menuitemcontainer, .menudevinos, .menudepostres').css('display', 'none');
+  $('.menudecomidas, .menudevinos, .menudepostres').css('display', 'none');
   $('#' + block_name).css('display', 'block');
   $('.' + block_name).css('display', 'block');
 }
 
 $('.platos').on('click', function() {
-  display('menuitemcontainer', $(this));
+  display('menudecomidas', $(this));
 });
 
 $('.vinos').on('click', function() {
@@ -249,28 +249,20 @@ $('.dish-2, .dish-3').mouseleave(function() {
 </div>
 
 <div class="menudecomidas">
-<div class="menuitemcontainer TITLE" style="margin: 3rem auto 0; ">
-<div class="menuitem topimage LES CAT LUK LFR LDE LNE LRU" style="">
-<img src="https://akidaniel.github.io/menupetxines/imagenes/catalina_logo.png" alt="Logo" border="0" height="200px">
-<p class="destacado LES" style="text-align:left;">Bienvenidos a <strong>Catalina Parrilla</strong>.
-Todos nuestros platos son elaborados en el momento. Relájese y disfrute. Si usted tiene prisa este no es su lugar. Aceptamos críticas y felicitaciones. Esta es nuestra casa y esperamos que también sea la suya. Gracias por elegirnos.</p>
-<p class="destacado CAT" style="text-align:left;">Benvinguts a <strong>Catalina Parrilla</strong>.
-Tots els nostres plats són elaborats al moment. Relaxeu-vos i gaudeixi. Si vostè té pressa aquest no és el seu lloc. Acceptem crítiques i felicitacions. Aquesta és la nostra casa i esperem que tambe sigui la seva. Gràcies per escollir-nos.</p>
-<p class="destacado LUK" style="text-align:left;">Welcome to <strong>Catalina Parrilla</strong>.
-All our dishes are preparated at the moment. Relax and enjoy. If you are in a hurry this is not your place. We accept reviews, tips for improve your experience and congratulations. This is our home and we hope it will be yours as well.
-Thank you for choosing us.</p>
-<p class="destacado LFR" style="text-align:left;">Bienvenue à <strong>Catalina Parrilla</strong>.
-Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du moment. Si vous êtes pressés, vous n'êtes pas au bon endroit. Nous acceptons les critiques, mais aussi les félicitations. Vous êtes, ici, chez nous, mais nous aimerions que, dès votre arrivée, vous vous sentiez aussi un peu... chez vous. Merci de nous avoir choisi.</p>
-</div>
+
 
 <div class="menuitemcontainer TITLE">
+<div class="menuitem topimage LES LUK LFR CAT LDE LNE LRU" style="background-image: url(https://akidaniel.github.io/menupetxines/imagenes/frontpetxines1.jpeg); height: 227px; background-size: contain; "></div>
+</div>
+
+<div class="menuitemcontainer TITLE" style="margin:0 auto">
 <header id="LES" class="SUBTITULO comidas LES CAT" style="color: #803a30;">Menú Restaurant</header>
 <header id="LUK" class="SUBTITULO comidas LUK LNE" style="color: #803a30;">Restaurant Menu</header>
 <header id="LFR" class="SUBTITULO comidas LFR" style="color: #803a30;">Menu du Restaurant</header>
 <header id="LDE" class="SUBTITULO comidas LDE" style="color: #803a30;">Speisekarte</header>
 <header id="LRU" class="SUBTITULO comidas LRU" style="color: #803a30;">Меню ресторана</header>
-
 </div>
+
 <!--CUADRO ENTRANTES-->
 <div class="menuitemcontainer">
 <div class="menuitem LES">Entrantes <i class="fas fa-pepper-hot" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
@@ -349,7 +341,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="flexbox"><div><span class="principal CAT">Costelles de xai amb guarnició</span><span class="principal LES">Costillas de cordero con guarnición</span><span class="principal LFR">Cótelettes d’Agneau avee garniture</span><span class="principal LUK">Lamb chops with garnish</span><span class="principal LDE">Lammkoteletts mit beitage</span><span class="principal LNE">Lamskoteletjes met garnituur</span><span class="principal LRU">Бараньи ребрышки с гарниром</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,80&nbsp;€</div></div>
 
 <div class="flexbox"><div><span class="principal CAT">Costelles de porc amb patates fregides</span><span class="principal LES">Costillas de cerdo con patatas fritas</span><span class="principal LFR">Cótes de porc avec frites</span><span class="principal LUK">Pork ribs with fried potatoes</span><span class="principal LDE">Schweioeríppcheo mlt fried potatoes</span><span class="principal LNE">Varkensribbetjes met gebakken aardappelen </span><span class="principal LRU">Свиные ребрышки с жареным картофелем</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">12,50&nbsp;€</div></div>
-</div>
 
 <div class="flexbox"><div><span class="principal CAT">Ració de patates fregidas</span><span class="principal LES">Ración de patatas fritas</span><span class="principal LFR">Portion de frites</span><span class="principal LUK">Portion of Fried potatoes</span><span class="principal LDE">Portion mit fried potatoes</span><span class="principal LNE">Portie frietjes</span><span class="principal LRU">Порция картофеля фри</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">3&nbsp;€</div></div>
 
@@ -364,10 +355,7 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="flexbox"><div><span class="principal ultimalinea CAT">Rocafort, pebre, funghi</span><span class="principal ultimalinea LES">Roquefort, pimienta, funghi</span><span class="principal ultimalinea LFR">Roquefort, poivre, funghi</span><span class="principal ultimalinea LUK">Roquefort, pepper, funghi</span><span class="principal ultimalinea LDE">Roquefort, Pfeffer, Pilze</span><span class="principal ultimalinea LNE">Roquefort, peper, funghi</span><span class="principal ultimalinea LRU">Рокфор, перец, грибок</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">3&nbsp;€</div></div>
 </div>
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-
 </div>
-
-
 
 </div>
 <!--FIN CUADRO CARNES-->
@@ -384,7 +372,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="menuitem LRU">Рыбы <i class="fas fa-fish" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
 
 <div>
-
 <div class="flexbox"><div><span class="principal CAT">Calamarsons fregit</span><span class="principal LES">Chipirones fritos</span><span class="principal LFR">Petits calmars frits</span><span class="principal LUK">Fried baby squids</span><span class="principal LDE">Gebratene kleine tintenfische</span><span class="principal LNE">Gebakken baby inktvis</span><span class="principal LRU">Жареный маленький кальмар</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">13,80&nbsp;€</div></div>
 
 <div class="flexbox"><div><span class="principal CAT">Musclos a la marinera</span><span class="principal LES">Mejillones a la marinera</span><span class="principal LFR">Moules à la sauce marinara</span><span class="principal LUK">Mussels with marinara sauce</span><span class="principal LDE">Miesmuscheln mit marinara-soe</span><span class="principal LNE">Mosselen met marinara saus</span><span class="principal LRU">Мидии с соусом маринара</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU"></span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,80&nbsp;€</div></div>
@@ -418,7 +405,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="flexbox"><div><span class="principal ultimalinea CAT">Llamantol a la brasa</span><span class="principal ultimalinea LES">Bogavante a la brasa</span><span class="principal ultimalinea LFR">Homard grillé</span><span class="principal ultimalinea LUK">Grilled lobster</span><span class="principal ultimalinea LDE">Gegrillter hummer</span><span class="principal ultimalinea LNE">Gegrilde kreeft</span><span class="principal ultimalinea LRU">Жареный лобстер</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">45,00&nbsp;€</div></div>
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-
 </div>
 </div>
 <!--FIN CUADRO PESCADOS-->
@@ -434,7 +420,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="menuitem LRU">Макароны <img src="https://akidaniel.github.io/menupetxines/imagenes/pasta.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;"></div>
 
 <div>
-
 <div class="flexbox"><div><span class="principal CAT">Macarrons napolitana</span><span class="principal LES">Macarrones napolitana</span><span class="principal LFR">Macaroni napolitain</span><span class="principal LUK">Neapolitan macaroni</span><span class="principal LDE">Neapolitanische makkaroni</span><span class="principal LNE"> Napolitaanse macaroni </span><span class="principal LRU"> Неаполитанские макароны </span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">8,20&nbsp;€</div></div>
 
 <div class="flexbox"><div><span class="principal CAT LES">Espagueti marinera</span><span class="principal LFR">Spaghetti à la marinière</span><span class="principal LUK">Marinera spaghetti</span><span class="principal LDE">Marinera-spaghetti</span><span class="principal LNE"> Spaghetti met zeevruchten </span><span class="principal LRU"> Морепродукты спагетти </span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">15,60&nbsp;€</div></div>
@@ -461,7 +446,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-
 </div>
 </div>
 <!--FIN CUADRO PASTAS-->
@@ -479,37 +463,7 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 <div>
 
-<div class="flexbox"><div><span class="principal CAT">Calamarsons fregit</span><span class="principal LES">Chipirones fritos</span><span class="principal LFR">Petits calmars frits</span><span class="principal LUK">Fried baby squids</span><span class="principal LDE">Gebratene kleine tintenfische</span><span class="principal LNE">Gebakken baby inktvis</span><span class="principal LRU">Жареный маленький кальмар</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">13,80&nbsp;€</div></div>
 
-<div class="flexbox"><div><span class="principal CAT">Musclos a la marinera</span><span class="principal LES">Mejillones a la marinera</span><span class="principal LFR">Moules à la sauce marinara</span><span class="principal LUK">Mussels with marinara sauce</span><span class="principal LDE">Miesmuscheln mit marinara-soe</span><span class="principal LNE">Mosselen met marinara saus</span><span class="principal LRU">Мидии с соусом маринара</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU"></span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a l’andalusa</span><span class="principal LES">Calamares a la andaluza</span><span class="principal LFR">Calmars à la andalou</span><span class="principal LUK">Andalusian style squids</span><span class="principal LDE">Andalusischen stil tintenfische</span><span class="principal LNE">Inktvis in "Andaluza" stijl</span><span class="principal LRU">Кальмары по-андалузски</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">12,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sardines a la planxa</span><span class="principal LES">Sardinas a la plancha</span><span class="principal LFR">Sardines grillées</span><span class="principal LUK">Grilled sardines</span><span class="principal LDE">Gegrillte sardinen</span><span class="principal LNE">Gegrilde sardines</span><span class="principal LRU">Жареные сардины</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,70&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada al forn sobre llit de patates panadera</span><span class="principal LES">Dorada al horno sobre cama de patatas panadera</span><span class="principal LFR">Dorade au four sur un lit de pommes de terreau four</span><span class="principal LUK">Baked sea bream on a bed of baked potatoes</span><span class="principal LDE">Gebackene seebrasse auf einem bett aus ofenkartoffeln</span><span class="principal LNE">Gebakken zeebrasem op een bedje van gebakken aardappelen</span><span class="principal LRU">Запеченный морской лещ на ложе из печеной картошки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada a la sal</span><span class="principal LES">Dorada a la sal</span><span class="principal LFR">Dorade a la sel</span><span class="principal LUK">Sea bream on the salt</span><span class="principal LDE">Seebra sse zu salzen</span><span class="principal LNE">Zeebrasem op het zout</span><span class="principal LRU">Морской лещ по соли</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">22,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Lluç a la planxa amb verdures</span><span class="principal LES">Merluza a la plancha con verduras</span><span class="principal LFR">Merlu grillé avec légumes</span><span class="principal LUK">Grilled hake with vegetables</span><span class="principal LDE">Gegriltter seehecht mit gem üse</span><span class="principal LNE">Gegrilde heek met groenten</span><span class="principal LRU">Хек на гриле с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a la planxa sobre niu de verduretes</span><span class="principal LES">Calamares a la plancha sobre nido de verduritas</span><span class="principal LFR">Calmars grillés sur nid de légumes</span><span class="principal LUK">Grilled squids on nest of vegetables</span><span class="principal LDE">Gegrillter tintenfisch a uf gemüse nest</span><span class="principal LNE">Gegrilde inktvis op nest van groenten</span><span class="principal LRU">Жареные кальмары на гнезде из овощей</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Graellada de peix (2 persones)</span><span class="principal LES">Parrillada de pescado (2 pers.)</span><span class="principal LFR">Assortiment de poissons grillés (2 pers.)</span><span class="principal LUK">Assorted grilled fish (2 pers.)</span><span class="principal LDE">Gegrilltes fischsortiment (2 personen)</span><span class="principal LNE">Gegrilde vis (2 personen)</span><span class="principal LRU">Жареная рыба (2 человека)</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">78,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Salmó a la planxa sobre niu de verduretes</span><span class="principal LES">Salmón a la plancha sobre nido de verduritas</span><span class="principal LFR">Saumon grillé sur nid de légumes</span><span class="principal LUK">Grilled salmon on vegetable nest</span><span class="principal LDE">Gegrillter lachs auf gemüse nest</span><span class="principal LNE">Gegrilde zalm op plantaardig nest</span><span class="principal LRU">Лосось гриль на овощном гнезде</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">17,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Gambes a la planxa</span><span class="principal LES">Gambas a la plancha</span><span class="principal LFR">Crevettes grillées</span><span class="principal LUK">Grilled prawns</span><span class="principal LDE">Gegrillten garnelen</span><span class="principal LNE">Gegrilde garnalen</span><span class="principal LRU">Жареные креветки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">26,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Pop a la gallega</span><span class="principal LES">Pulpo a la gallega</span><span class="principal LFR">Poulpe à la galicienne</span><span class="principal LUK">Galician octopus style</span><span class="principal LDE">Galizische stil krake</span><span class="principal LNE">Galicische octopus</span><span class="principal LRU">Галицкий осьминог</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Turbot amb verdures</span><span class="principal LES">Rodaballo con verduras</span><span class="principal LFR">Turbot aux légumes</span><span class="principal LUK">Turbot with vegetables</span><span class="principal LDE">Steinbutt mit gemüse</span><span class="principal LNE">Tarbot met groenten</span><span class="principal LRU">Турбо с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sopa de peix</span><span class="principal LES">Sopa de pescado</span><span class="principal LFR">Soupe de poisson</span><span class="principal LUK">Fish soup</span><span class="principal LDE">Fischsuppe</span><span class="principal LNE">Vissoep</span><span class="principal LRU">Рыбный суп</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Cloquisses en la seva salsa</span><span class="principal LES">Almejas en su salsa</span><span class="principal LFR">Palourdes dans leur sauce</span><span class="principal LUK">Clams in sauce</span><span class="principal LDE">Miesmuscheln in soBe</span><span class="principal LNE">Kokkels in hun saus</span><span class="principal LRU">Моллюски в их соусе</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal ultimalinea CAT">Llamantol a la brasa</span><span class="principal ultimalinea LES">Bogavante a la brasa</span><span class="principal ultimalinea LFR">Homard grillé</span><span class="principal ultimalinea LUK">Grilled lobster</span><span class="principal ultimalinea LDE">Gegrillter hummer</span><span class="principal ultimalinea LNE">Gegrilde kreeft</span><span class="principal ultimalinea LRU">Жареный лобстер</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">45,00&nbsp;€</div></div>
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
 
@@ -530,37 +484,7 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 <div>
 
-<div class="flexbox"><div><span class="principal CAT">Calamarsons fregit</span><span class="principal LES">Chipirones fritos</span><span class="principal LFR">Petits calmars frits</span><span class="principal LUK">Fried baby squids</span><span class="principal LDE">Gebratene kleine tintenfische</span><span class="principal LNE">Gebakken baby inktvis</span><span class="principal LRU">Жареный маленький кальмар</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">13,80&nbsp;€</div></div>
 
-<div class="flexbox"><div><span class="principal CAT">Musclos a la marinera</span><span class="principal LES">Mejillones a la marinera</span><span class="principal LFR">Moules à la sauce marinara</span><span class="principal LUK">Mussels with marinara sauce</span><span class="principal LDE">Miesmuscheln mit marinara-soe</span><span class="principal LNE">Mosselen met marinara saus</span><span class="principal LRU">Мидии с соусом маринара</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU"></span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a l’andalusa</span><span class="principal LES">Calamares a la andaluza</span><span class="principal LFR">Calmars à la andalou</span><span class="principal LUK">Andalusian style squids</span><span class="principal LDE">Andalusischen stil tintenfische</span><span class="principal LNE">Inktvis in "Andaluza" stijl</span><span class="principal LRU">Кальмары по-андалузски</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">12,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sardines a la planxa</span><span class="principal LES">Sardinas a la plancha</span><span class="principal LFR">Sardines grillées</span><span class="principal LUK">Grilled sardines</span><span class="principal LDE">Gegrillte sardinen</span><span class="principal LNE">Gegrilde sardines</span><span class="principal LRU">Жареные сардины</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,70&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada al forn sobre llit de patates panadera</span><span class="principal LES">Dorada al horno sobre cama de patatas panadera</span><span class="principal LFR">Dorade au four sur un lit de pommes de terreau four</span><span class="principal LUK">Baked sea bream on a bed of baked potatoes</span><span class="principal LDE">Gebackene seebrasse auf einem bett aus ofenkartoffeln</span><span class="principal LNE">Gebakken zeebrasem op een bedje van gebakken aardappelen</span><span class="principal LRU">Запеченный морской лещ на ложе из печеной картошки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada a la sal</span><span class="principal LES">Dorada a la sal</span><span class="principal LFR">Dorade a la sel</span><span class="principal LUK">Sea bream on the salt</span><span class="principal LDE">Seebra sse zu salzen</span><span class="principal LNE">Zeebrasem op het zout</span><span class="principal LRU">Морской лещ по соли</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">22,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Lluç a la planxa amb verdures</span><span class="principal LES">Merluza a la plancha con verduras</span><span class="principal LFR">Merlu grillé avec légumes</span><span class="principal LUK">Grilled hake with vegetables</span><span class="principal LDE">Gegriltter seehecht mit gem üse</span><span class="principal LNE">Gegrilde heek met groenten</span><span class="principal LRU">Хек на гриле с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a la planxa sobre niu de verduretes</span><span class="principal LES">Calamares a la plancha sobre nido de verduritas</span><span class="principal LFR">Calmars grillés sur nid de légumes</span><span class="principal LUK">Grilled squids on nest of vegetables</span><span class="principal LDE">Gegrillter tintenfisch a uf gemüse nest</span><span class="principal LNE">Gegrilde inktvis op nest van groenten</span><span class="principal LRU">Жареные кальмары на гнезде из овощей</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Graellada de peix (2 persones)</span><span class="principal LES">Parrillada de pescado (2 pers.)</span><span class="principal LFR">Assortiment de poissons grillés (2 pers.)</span><span class="principal LUK">Assorted grilled fish (2 pers.)</span><span class="principal LDE">Gegrilltes fischsortiment (2 personen)</span><span class="principal LNE">Gegrilde vis (2 personen)</span><span class="principal LRU">Жареная рыба (2 человека)</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">78,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Salmó a la planxa sobre niu de verduretes</span><span class="principal LES">Salmón a la plancha sobre nido de verduritas</span><span class="principal LFR">Saumon grillé sur nid de légumes</span><span class="principal LUK">Grilled salmon on vegetable nest</span><span class="principal LDE">Gegrillter lachs auf gemüse nest</span><span class="principal LNE">Gegrilde zalm op plantaardig nest</span><span class="principal LRU">Лосось гриль на овощном гнезде</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">17,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Gambes a la planxa</span><span class="principal LES">Gambas a la plancha</span><span class="principal LFR">Crevettes grillées</span><span class="principal LUK">Grilled prawns</span><span class="principal LDE">Gegrillten garnelen</span><span class="principal LNE">Gegrilde garnalen</span><span class="principal LRU">Жареные креветки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">26,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Pop a la gallega</span><span class="principal LES">Pulpo a la gallega</span><span class="principal LFR">Poulpe à la galicienne</span><span class="principal LUK">Galician octopus style</span><span class="principal LDE">Galizische stil krake</span><span class="principal LNE">Galicische octopus</span><span class="principal LRU">Галицкий осьминог</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Turbot amb verdures</span><span class="principal LES">Rodaballo con verduras</span><span class="principal LFR">Turbot aux légumes</span><span class="principal LUK">Turbot with vegetables</span><span class="principal LDE">Steinbutt mit gemüse</span><span class="principal LNE">Tarbot met groenten</span><span class="principal LRU">Турбо с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sopa de peix</span><span class="principal LES">Sopa de pescado</span><span class="principal LFR">Soupe de poisson</span><span class="principal LUK">Fish soup</span><span class="principal LDE">Fischsuppe</span><span class="principal LNE">Vissoep</span><span class="principal LRU">Рыбный суп</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Cloquisses en la seva salsa</span><span class="principal LES">Almejas en su salsa</span><span class="principal LFR">Palourdes dans leur sauce</span><span class="principal LUK">Clams in sauce</span><span class="principal LDE">Miesmuscheln in soBe</span><span class="principal LNE">Kokkels in hun saus</span><span class="principal LRU">Моллюски в их соусе</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal ultimalinea CAT">Llamantol a la brasa</span><span class="principal ultimalinea LES">Bogavante a la brasa</span><span class="principal ultimalinea LFR">Homard grillé</span><span class="principal ultimalinea LUK">Grilled lobster</span><span class="principal ultimalinea LDE">Gegrillter hummer</span><span class="principal ultimalinea LNE">Gegrilde kreeft</span><span class="principal ultimalinea LRU">Жареный лобстер</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">45,00&nbsp;€</div></div>
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
 
@@ -582,37 +506,7 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 <div>
 
-<div class="flexbox"><div><span class="principal CAT">Calamarsons fregit</span><span class="principal LES">Chipirones fritos</span><span class="principal LFR">Petits calmars frits</span><span class="principal LUK">Fried baby squids</span><span class="principal LDE">Gebratene kleine tintenfische</span><span class="principal LNE">Gebakken baby inktvis</span><span class="principal LRU">Жареный маленький кальмар</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">13,80&nbsp;€</div></div>
 
-<div class="flexbox"><div><span class="principal CAT">Musclos a la marinera</span><span class="principal LES">Mejillones a la marinera</span><span class="principal LFR">Moules à la sauce marinara</span><span class="principal LUK">Mussels with marinara sauce</span><span class="principal LDE">Miesmuscheln mit marinara-soe</span><span class="principal LNE">Mosselen met marinara saus</span><span class="principal LRU">Мидии с соусом маринара</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU"></span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a l’andalusa</span><span class="principal LES">Calamares a la andaluza</span><span class="principal LFR">Calmars à la andalou</span><span class="principal LUK">Andalusian style squids</span><span class="principal LDE">Andalusischen stil tintenfische</span><span class="principal LNE">Inktvis in "Andaluza" stijl</span><span class="principal LRU">Кальмары по-андалузски</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">12,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sardines a la planxa</span><span class="principal LES">Sardinas a la plancha</span><span class="principal LFR">Sardines grillées</span><span class="principal LUK">Grilled sardines</span><span class="principal LDE">Gegrillte sardinen</span><span class="principal LNE">Gegrilde sardines</span><span class="principal LRU">Жареные сардины</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,70&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada al forn sobre llit de patates panadera</span><span class="principal LES">Dorada al horno sobre cama de patatas panadera</span><span class="principal LFR">Dorade au four sur un lit de pommes de terreau four</span><span class="principal LUK">Baked sea bream on a bed of baked potatoes</span><span class="principal LDE">Gebackene seebrasse auf einem bett aus ofenkartoffeln</span><span class="principal LNE">Gebakken zeebrasem op een bedje van gebakken aardappelen</span><span class="principal LRU">Запеченный морской лещ на ложе из печеной картошки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada a la sal</span><span class="principal LES">Dorada a la sal</span><span class="principal LFR">Dorade a la sel</span><span class="principal LUK">Sea bream on the salt</span><span class="principal LDE">Seebra sse zu salzen</span><span class="principal LNE">Zeebrasem op het zout</span><span class="principal LRU">Морской лещ по соли</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">22,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Lluç a la planxa amb verdures</span><span class="principal LES">Merluza a la plancha con verduras</span><span class="principal LFR">Merlu grillé avec légumes</span><span class="principal LUK">Grilled hake with vegetables</span><span class="principal LDE">Gegriltter seehecht mit gem üse</span><span class="principal LNE">Gegrilde heek met groenten</span><span class="principal LRU">Хек на гриле с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a la planxa sobre niu de verduretes</span><span class="principal LES">Calamares a la plancha sobre nido de verduritas</span><span class="principal LFR">Calmars grillés sur nid de légumes</span><span class="principal LUK">Grilled squids on nest of vegetables</span><span class="principal LDE">Gegrillter tintenfisch a uf gemüse nest</span><span class="principal LNE">Gegrilde inktvis op nest van groenten</span><span class="principal LRU">Жареные кальмары на гнезде из овощей</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Graellada de peix (2 persones)</span><span class="principal LES">Parrillada de pescado (2 pers.)</span><span class="principal LFR">Assortiment de poissons grillés (2 pers.)</span><span class="principal LUK">Assorted grilled fish (2 pers.)</span><span class="principal LDE">Gegrilltes fischsortiment (2 personen)</span><span class="principal LNE">Gegrilde vis (2 personen)</span><span class="principal LRU">Жареная рыба (2 человека)</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">78,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Salmó a la planxa sobre niu de verduretes</span><span class="principal LES">Salmón a la plancha sobre nido de verduritas</span><span class="principal LFR">Saumon grillé sur nid de légumes</span><span class="principal LUK">Grilled salmon on vegetable nest</span><span class="principal LDE">Gegrillter lachs auf gemüse nest</span><span class="principal LNE">Gegrilde zalm op plantaardig nest</span><span class="principal LRU">Лосось гриль на овощном гнезде</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">17,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Gambes a la planxa</span><span class="principal LES">Gambas a la plancha</span><span class="principal LFR">Crevettes grillées</span><span class="principal LUK">Grilled prawns</span><span class="principal LDE">Gegrillten garnelen</span><span class="principal LNE">Gegrilde garnalen</span><span class="principal LRU">Жареные креветки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">26,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Pop a la gallega</span><span class="principal LES">Pulpo a la gallega</span><span class="principal LFR">Poulpe à la galicienne</span><span class="principal LUK">Galician octopus style</span><span class="principal LDE">Galizische stil krake</span><span class="principal LNE">Galicische octopus</span><span class="principal LRU">Галицкий осьминог</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Turbot amb verdures</span><span class="principal LES">Rodaballo con verduras</span><span class="principal LFR">Turbot aux légumes</span><span class="principal LUK">Turbot with vegetables</span><span class="principal LDE">Steinbutt mit gemüse</span><span class="principal LNE">Tarbot met groenten</span><span class="principal LRU">Турбо с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sopa de peix</span><span class="principal LES">Sopa de pescado</span><span class="principal LFR">Soupe de poisson</span><span class="principal LUK">Fish soup</span><span class="principal LDE">Fischsuppe</span><span class="principal LNE">Vissoep</span><span class="principal LRU">Рыбный суп</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Cloquisses en la seva salsa</span><span class="principal LES">Almejas en su salsa</span><span class="principal LFR">Palourdes dans leur sauce</span><span class="principal LUK">Clams in sauce</span><span class="principal LDE">Miesmuscheln in soBe</span><span class="principal LNE">Kokkels in hun saus</span><span class="principal LRU">Моллюски в их соусе</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal ultimalinea CAT">Llamantol a la brasa</span><span class="principal ultimalinea LES">Bogavante a la brasa</span><span class="principal ultimalinea LFR">Homard grillé</span><span class="principal ultimalinea LUK">Grilled lobster</span><span class="principal ultimalinea LDE">Gegrillter hummer</span><span class="principal ultimalinea LNE">Gegrilde kreeft</span><span class="principal ultimalinea LRU">Жареный лобстер</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">45,00&nbsp;€</div></div>
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
 
@@ -633,37 +527,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 <div>
 
-<div class="flexbox"><div><span class="principal CAT">Calamarsons fregit</span><span class="principal LES">Chipirones fritos</span><span class="principal LFR">Petits calmars frits</span><span class="principal LUK">Fried baby squids</span><span class="principal LDE">Gebratene kleine tintenfische</span><span class="principal LNE">Gebakken baby inktvis</span><span class="principal LRU">Жареный маленький кальмар</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">13,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Musclos a la marinera</span><span class="principal LES">Mejillones a la marinera</span><span class="principal LFR">Moules à la sauce marinara</span><span class="principal LUK">Mussels with marinara sauce</span><span class="principal LDE">Miesmuscheln mit marinara-soe</span><span class="principal LNE">Mosselen met marinara saus</span><span class="principal LRU">Мидии с соусом маринара</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU"></span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a l’andalusa</span><span class="principal LES">Calamares a la andaluza</span><span class="principal LFR">Calmars à la andalou</span><span class="principal LUK">Andalusian style squids</span><span class="principal LDE">Andalusischen stil tintenfische</span><span class="principal LNE">Inktvis in "Andaluza" stijl</span><span class="principal LRU">Кальмары по-андалузски</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">12,80&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sardines a la planxa</span><span class="principal LES">Sardinas a la plancha</span><span class="principal LFR">Sardines grillées</span><span class="principal LUK">Grilled sardines</span><span class="principal LDE">Gegrillte sardinen</span><span class="principal LNE">Gegrilde sardines</span><span class="principal LRU">Жареные сардины</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,70&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada al forn sobre llit de patates panadera</span><span class="principal LES">Dorada al horno sobre cama de patatas panadera</span><span class="principal LFR">Dorade au four sur un lit de pommes de terreau four</span><span class="principal LUK">Baked sea bream on a bed of baked potatoes</span><span class="principal LDE">Gebackene seebrasse auf einem bett aus ofenkartoffeln</span><span class="principal LNE">Gebakken zeebrasem op een bedje van gebakken aardappelen</span><span class="principal LRU">Запеченный морской лещ на ложе из печеной картошки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Orada a la sal</span><span class="principal LES">Dorada a la sal</span><span class="principal LFR">Dorade a la sel</span><span class="principal LUK">Sea bream on the salt</span><span class="principal LDE">Seebra sse zu salzen</span><span class="principal LNE">Zeebrasem op het zout</span><span class="principal LRU">Морской лещ по соли</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">22,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Lluç a la planxa amb verdures</span><span class="principal LES">Merluza a la plancha con verduras</span><span class="principal LFR">Merlu grillé avec légumes</span><span class="principal LUK">Grilled hake with vegetables</span><span class="principal LDE">Gegriltter seehecht mit gem üse</span><span class="principal LNE">Gegrilde heek met groenten</span><span class="principal LRU">Хек на гриле с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Calamars a la planxa sobre niu de verduretes</span><span class="principal LES">Calamares a la plancha sobre nido de verduritas</span><span class="principal LFR">Calmars grillés sur nid de légumes</span><span class="principal LUK">Grilled squids on nest of vegetables</span><span class="principal LDE">Gegrillter tintenfisch a uf gemüse nest</span><span class="principal LNE">Gegrilde inktvis op nest van groenten</span><span class="principal LRU">Жареные кальмары на гнезде из овощей</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Graellada de peix (2 persones)</span><span class="principal LES">Parrillada de pescado (2 pers.)</span><span class="principal LFR">Assortiment de poissons grillés (2 pers.)</span><span class="principal LUK">Assorted grilled fish (2 pers.)</span><span class="principal LDE">Gegrilltes fischsortiment (2 personen)</span><span class="principal LNE">Gegrilde vis (2 personen)</span><span class="principal LRU">Жареная рыба (2 человека)</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">78,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Salmó a la planxa sobre niu de verduretes</span><span class="principal LES">Salmón a la plancha sobre nido de verduritas</span><span class="principal LFR">Saumon grillé sur nid de légumes</span><span class="principal LUK">Grilled salmon on vegetable nest</span><span class="principal LDE">Gegrillter lachs auf gemüse nest</span><span class="principal LNE">Gegrilde zalm op plantaardig nest</span><span class="principal LRU">Лосось гриль на овощном гнезде</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">17,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Gambes a la planxa</span><span class="principal LES">Gambas a la plancha</span><span class="principal LFR">Crevettes grillées</span><span class="principal LUK">Grilled prawns</span><span class="principal LDE">Gegrillten garnelen</span><span class="principal LNE">Gegrilde garnalen</span><span class="principal LRU">Жареные креветки</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">26,00&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Pop a la gallega</span><span class="principal LES">Pulpo a la gallega</span><span class="principal LFR">Poulpe à la galicienne</span><span class="principal LUK">Galician octopus style</span><span class="principal LDE">Galizische stil krake</span><span class="principal LNE">Galicische octopus</span><span class="principal LRU">Галицкий осьминог</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,60&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Turbot amb verdures</span><span class="principal LES">Rodaballo con verduras</span><span class="principal LFR">Turbot aux légumes</span><span class="principal LUK">Turbot with vegetables</span><span class="principal LDE">Steinbutt mit gemüse</span><span class="principal LNE">Tarbot met groenten</span><span class="principal LRU">Турбо с овощами</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">18,50&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Sopa de peix</span><span class="principal LES">Sopa de pescado</span><span class="principal LFR">Soupe de poisson</span><span class="principal LUK">Fish soup</span><span class="principal LDE">Fischsuppe</span><span class="principal LNE">Vissoep</span><span class="principal LRU">Рыбный суп</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">16,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal CAT">Cloquisses en la seva salsa</span><span class="principal LES">Almejas en su salsa</span><span class="principal LFR">Palourdes dans leur sauce</span><span class="principal LUK">Clams in sauce</span><span class="principal LDE">Miesmuscheln in soBe</span><span class="principal LNE">Kokkels in hun saus</span><span class="principal LRU">Моллюски в их соусе</span></div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">9,20&nbsp;€</div></div>
-
-<div class="flexbox"><div><span class="principal ultimalinea CAT">Llamantol a la brasa</span><span class="principal ultimalinea LES">Bogavante a la brasa</span><span class="principal ultimalinea LFR">Homard grillé</span><span class="principal ultimalinea LUK">Grilled lobster</span><span class="principal ultimalinea LDE">Gegrillter hummer</span><span class="principal ultimalinea LNE">Gegrilde kreeft</span><span class="principal ultimalinea LRU">Жареный лобстер</span></div><div class="principal preciolista ultimalinea LES CAT LUK LFR LDE LNE LRU">45,00&nbsp;€</div></div>
 
 <div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
 
@@ -778,421 +641,6 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <!--FIN CUADRO ENSALADAS-->
 <div><img src="https://akidaniel.github.io/menupetxines/imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
 
-<!--CUADRO PASTAS-->
-<div class="menuitemcontainer">
-<div class="menuitem LES CAT LUK LFR LDE LNE LRU">Pasta <img src="https://akidaniel.github.io/menupetxines/imagenes/pasta.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;"><!--<i class="fas fa-bacon" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i>--></div>
-
-<div class="flexbox lista">
-<div class="layer show"></div>
-
-<div class="dish-2">
-<div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish22.png" alt="Panzerotti" border="0" ></div>
-<div><!--<span class="dishnumber">P01</span>--><span class="price">10.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Panzerotti</p>
-<p class="descr LES">Ricotta y espinaca con espárragos y mantequilla trufada</p>
-<p class="descr CAT">Ricotta i espinacs amb espàrrecs i mantega trufada</p>
-<p class="descr LUK">Ricotta and Spinach with asparagus and truffled butter</p>
-<p class="descr LFR">Ricotta et épinards avec asperges et beurre truffé</p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish23.png" alt="Raviolaccio" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P02</span>--><span class="price">10.95 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Raviolaccio</p>
-<p class="descr LES">Carne a la brasa con salsa napolitana</p>
-<p class="descr CAT">Carn a la brasa amb salsa napolitana</p>
-<p class="descr LUK">Grilled Meat with Napolitana Sauce (tomato)</p>
-<p class="descr LFR">Viande Grillée avec sauce Napolitana (tomate)</p>
-</div>
-</div>
-
-<div class="flexbox lista">
-<div class="layer show"></div>
-<div class="dish-2">
-<div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish24.png" alt="Spiga" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P03</span>--><span class="price">13.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Spiga</p>
-<p class="descr LES">Trufa con salsa de setas</p>
-<p class="descr CAT">Trufa amb salsa de boletus</p>
-<p class="descr LUK">Truffle with mushrooms sause</p>
-<p class="descr LFR">Truffe avec sauce aux champignons</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish25.png" alt="Fiocchi" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P04</span>--><span class="price">10.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Fiocchi</p>
-<p class="descr LES">Queso y pera con salsa gorgonzola</p>
-<p class="descr CAT">Formatge i pera amb salsa gorgonzola</p>
-<p class="descr LUK">Cheese and Pear with Gorgonzola Sauce</p>
-<p class="descr LFR">Fromage et poire avec sauce Gorgonzola</p>
-</div>
-</div>
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish26.png" alt="Spaghetti" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P05</span>--><span class="price">10.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Spaghetti</p>
-<p class="descr LES">Con verduras a la brasa y parmesano</p>
-<p class="descr CAT">Amb verdures brasa i formatge parmessa</p>
-<p class="descr LUK">With Grilled Vegetables and Parmesan Cheese</p>
-<p class="descr LFR">Avec légumes au grill et fromage parmesan</p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish27.png" alt="Gnocchi" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P08</span>--><span class="price">9.95 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Gnocchi</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">Bolognesa – Napolitana – Pesto</p>
-</div>
-</div>
-
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish30.png" alt="Tagliatelle" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P09</span>--><span class="price">9.95 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Tagliatelle</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">Bolognesa – Napolitana – Pesto</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish31.png" alt="Taglioline Verdi" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P10</span>--><span class="price">9.95 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Taglioline Verdi</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">Bolognesa – Napolitana – Pesto</p>
-</div>
-</div>
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish28.png" alt="Lasaña de Verduras" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P06</span>--><span class="price">12.50 €</span></div>
-<p class="menuitem plato LES">Lasaña de verduras</p>
-<p class="menuitem plato CAT">Lasanya de verdures</p>
-<p class="menuitem plato LUK">Vegetables Lasagna</p>
-<p class="menuitem plato LFR">Lasagne aux légumes</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">(20 min.)</p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish29.png" alt="Lasaña de Carne" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P07</span>--><span class="price">12.50 €</span></div>
-<p class="menuitem plato LES">Lasaña de carne</p>
-<p class="menuitem plato CAT">Lasanya de carn</p>
-<p class="menuitem plato LUK">Meat Lasagna</p>
-<p class="menuitem plato LFR">Lasagne à la viande</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">(20 min.)</p>
-</div>
-</div>
-
-<div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-</div>
-<!--FIN CUADRO PASTAS-->
-<div><img src="https://akidaniel.github.io/menupetxines/imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-<!--CUADRO MILANESAS-->
-<div class="menuitemcontainer">
-<div class="menuitem LES" style="padding: 8px 0 0 0">Milanesas <span style="font-size:14px; line-height: 280%;">con patatas fritas</span><i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
-<div class="menuitem CAT" style="padding: 8px 0 0 0">Escalope <span style="font-size:14px; line-height: 280%;">amb patates fregidas</span><i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
-<div class="menuitem LUK" style="padding: 8px 0 0 0">Milanesas <span style="font-size:14px; line-height: 280%;">with french fries</span><i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
-<div class="menuitem LFR" style="padding: 8px 0 0 0">Escalope <span style="font-size:14px; line-height: 280%;">aux frites</span><i class="fas fa-utensils" style="color:#803a30; vertical-align:middle; font-size: 24px;"></i></div>
-
-<div class="flexbox lista">
-<div class="layer show"></div>
-
-<div class="dish-2">
-<div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish32.png" alt="Napolitana" border="0" ></div>
-<div><!--<span class="dishnumber">M1</span>--><span class="price">13.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Napolitana</p>
-<p class="descr LES">Pollo o ternera<br>Suplemento huevo frito<br><strong>2 €</strong></p>
-<p class="descr CAT">Pllastre o vedella<br>Suplement ou ferrat<br><strong>2 €</strong></p>
-<p class="descr LUK">Chicken or beef<br>Fried egg suplement<br><strong>2 €</strong></p>
-<p class="descr LFR">Poulet o veau<br>Supplement d'oeuf au<br><strong>2 €</strong></p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish33.png" alt="Roquefort" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">P2</span>--><span class="price">13.90 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Roquefort</p>
-<p class="descr LES">Pollo o ternera<br>Suplemento huevo frito<br><strong>2 €</strong></p>
-<p class="descr CAT">Pllastre o vedella<br>Suplement ou ferrat<br><strong>2 €</strong></p>
-<p class="descr LUK">Chicken or beef<br>Fried egg suplement<br><strong>2 €</strong></p>
-<p class="descr LFR">Poulet o veau<br>Supplement d'oeuf au<br><strong>2 €</strong></p>
-</div>
-
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish34.png" alt="Clásica" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">03</span>--><span class="price">14.90 €</span></div>
-<p class="menuitem plato LES">Clásica</p>
-<p class="menuitem plato CAT">Clàssica</p>
-<p class="menuitem plato LUK">Classic</p>
-<p class="menuitem plato LFR">Classique</p>
-
-<p class="descr LES">Pollo o ternera<br>Suplemento huevo frito<br><strong>2 €</strong></p>
-<p class="descr CAT">Pllastre o vedella<br>Suplement ou ferrat<br><strong>2 €</strong></p>
-<p class="descr LUK">Chicken or beef<br>Fried egg suplement<br><strong>2 €</strong></p>
-<p class="descr LFR">Poulet o veau<br>Supplement d'oeuf au<br><strong>2 €</strong></p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish35.png" alt="Caprese" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">04</span>--><span class="price">12.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Capresse</p>
-<p class="descr LES">Pollo o ternera<br>Suplemento huevo frito<br><strong>2 €</strong></p>
-<p class="descr CAT">Pllastre o vedella<br>Suplement ou ferrat<br><strong>2 €</strong></p>
-<p class="descr LUK">Chicken or beef<br>Fried egg suplement<br><strong>2 €</strong></p>
-<p class="descr LFR">Poulet o veau<br>Supplement d'oeuf au<br><strong>2 €</strong></p>
-</div>
-</div>
-
-
-<div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-</div>
-<!--FIN CUADRO MILANESAS-->
-<div><img src="https://akidaniel.github.io/menupetxines/imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
-
-<!--CUADRO PARRILLA-->
-<div class="menuitemcontainer">
-<div class="menuitem LES">Nuestras carnes a la brasa <img src="https://akidaniel.github.io/menupetxines/imagenes/meat.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;">
-</div>
-<div class="menuitem CAT">Les nostres carns a la brasa <img src="https://akidaniel.github.io/menupetxines/imagenes/meat.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;"></div>
-<div class="menuitem LUK">Our grilled meats <img src="https://akidaniel.github.io/menupetxines/imagenes/meat.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;"></div>
-<div class="menuitem LFR">Nos viandes grillées <img src="https://akidaniel.github.io/menupetxines/imagenes/meat.png" alt="Grill" border="0" width="30px" style="vertical-align:middle;"></div>
-
-<div style="mix-blend-mode: multiply">
-<img src="https://akidaniel.github.io/menupetxines/imagenes/cow.png" alt="Cortes" border="0" width="100%">
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish36.png" alt="Asado de tira" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">10</span><span class="price">18.95 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Asado de tira</p>
-<p class="descr LES">A fuego lento</p>
-<p class="descr CAT">A foc lent</p>
-<p class="descr LUK">Slow flame</p>
-<p class="descr LFR">Á feu doux</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish37.png" alt=" "width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">2</span><span class="price">13.50 €</span></div>
-<p class="menuitem plato LES">Bife/entraña</p>
-<p class="menuitem plato CAT">Entrama</p>
-<p class="menuitem plato LUK">Bife (Skirt Steak)</p>
-<p class="menuitem plato LFR">Hampe</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish38.png" alt="Churrasco" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">9</span><span class="price">12.90 €</span></div>
-<p class="menuitem plato LES">Churrasco</p>
-<p class="menuitem plato CAT">Xurrasco</p>
-<p class="menuitem plato LUK">Biff ribs</p>
-<p class="menuitem plato LFR">Xurrasco (côtes de veau)</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish39.png" alt="Vacío" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">3</span><span class="price">13.50 €</span></div>
-<p class="menuitem plato LES">Vacío</p>
-<p class="menuitem plato CAT">Vacio</p>
-<p class="menuitem plato LUK">Flank Steak</p>
-<p class="menuitem plato LFR">Bavette (Vacio)</p>
-</div>
-</div>
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish40.png" alt="Entrecot Argentino" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">5</span><span class="price">23.55 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Entrecot Argentino</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">Bife de chorizo</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish41.png" alt="Entrecot Girona" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">5</span><span class="price">18.90 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Entrecot Girona</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish42.png" alt="Solomillo" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">1</span><span class="price">24.90 €</span></div>
-<p class="menuitem plato LES">Solomillo</p>
-<p class="menuitem plato CAT">Filet</p>
-<p class="menuitem plato LUK">Fillet of Beef</p>
-<p class="menuitem plato LFR">Filet</p>
-  </div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish43.png" alt="Chuletón" width=" " border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">12</span><span class="price">55.90 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Chuletón madurado<br>“Dry Ager"</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">(x kg)</p>
-</div>
-</div>
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish44.png" alt="Cordero" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">1</span>--><span class="price">14.50 €</span></div>
-<p class="menuitem plato LES">Cordero</p>
-<p class="menuitem plato CAT">Xai</p>
-<p class="menuitem plato LUK">Lamb</p>
-<p class="menuitem plato LFR">Agneau</p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish45.png" alt="Cerdo" width=" " border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">10</span>--><span class="price">15.85 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Secreto ibérico</p>
-<p class="descr LES">Cerdo</p>
-<p class="descr CAT">Porc</p>
-<p class="descr LUK">Pork</p>
-<p class="descr LFR">Porc</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish46.png" alt="Brocheta pollo" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">1</span>--><span class="price">11.95 €</span></div>
-<p class="menuitem plato LES">Brocheta pollo</p>
-<p class="menuitem plato CAT">Pinxo pollastre</p>
-<p class="menuitem plato LUK">Chicken Brochettes </p>
-<p class="menuitem plato LFR">Brochettes poulet</p>
-</div>
- 
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish47.png" alt="Muslo pollo" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">1</span>--><span class="price">11.85 €</span></div>
-<p class="menuitem plato LES">Pollo muslo o pechuga</p>
-<p class="menuitem plato CAT">Pollastre cuixa o pit</p>
-<p class="menuitem plato LUK">Chicken Thigh/Breast</p>
-<p class="menuitem plato LFR">Poulet cuisse/blanc</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish48.png" alt="Pulpo" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">1</span>--><span class="price">21.90 €</span></div>
-<p class="menuitem plato LES">Pulpo</p>
-<p class="menuitem plato CAT">Pop</p>
-<p class="menuitem plato LUK">Octopus</p>
-<p class="menuitem plato LFR">Poulpe</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish49.png" alt="Entrecot" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">5</span><span class="price">25.85 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Entrecot ANGUS</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish50.png" alt="Nebraska" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">9</span><span class="price">21.95 €</span></div>
-<p class="menuitem plato LES">Churrasco Nebraska</p>
-<p class="menuitem plato CAT">Xurrasco Nebraska</p>
-<p class="menuitem plato LUK">Beef Ribs Nebraska</p>
-<p class="menuitem plato LFR">Xurrasco Nebraska</p>
-<p class="descr LES CAT LUK LFR LDE LNE LRU">(USA)</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish51.png" alt="Lomo bajo" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">7</span><span class="price">24.90 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Lomo Bajo<br>Argentina</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish52.png" alt="Rib Eye" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">13</span><span class="price">24.90 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Rib Eye<br>Argentina</p>
-</div>
- 
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish53.png" alt="Cuadril" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">4</span><span class="price">17.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Colita de Cuadril<br>Uruguay</p>
-</div>
-</div>
-
-<div class="flexbox lista"><div class="layer show"></div>
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish54.png" alt="Picaña" border="0" style="margin: 0 auto"></div>
-<div class="numeroplato"><span class="dishnumber">8</span><span class="price">17.50 €</span></div>
-<p class="menuitem plato LES CAT LUK LFR LDE LNE LRU">Picaña ANGUS</p>
-</div>
-</div>
-
-
-<div class="flexbox lista"><div class="layer show"></div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish55.png" alt="Parrillada" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">S1</span>--><span class="price">42.50 €</span></div>
-<p class="menuitem plato LES">Parrillada de ternera</p>
-<p class="menuitem plato CAT">Graellada de vedella</p>
-<p class="menuitem plato LUK">Barbecue Veal</p>
-<p class="menuitem plato LFR">Grill Veau</p>
-<p class="descr LES"><strong>Para compartir<br>2 personas</strong><br>Vacío, bife, churrasco, picaña </p>
-<p class="descr CAT"><strong>Per compartir<br>2 personas</strong><br>Vacio, bife, churrasco, picaña</p>
-<p class="descr LUK"><strong>To share<br>2 people</strong><br>Flank Steak, bife, picaña, ribs</p>
-<p class="descr LFR"><strong>Pour partager<br>2 personnes</strong><br>Bavette, hampe, picaña, côtes de veau</p>
-</div>
-
-<div class="dish-2"><div class="dishphoto"><img src="https://akidaniel.github.io/menupetxines/imagenes/dish56.png" alt="Parrillada" border="0" style="margin: 0 auto"></div>
-<div><!--<span class="dishnumber">S1</span>--><span class="price">38.50 €</span></div>
-<p class="menuitem plato LES">Parrillada mixta</p>
-<p class="menuitem plato CAT">Graellada mixta</p>
-<p class="menuitem plato LUK">Barbecue Mix</p>
-<p class="menuitem plato LFR">Grill Mix</p>
-<p class="descr LES"><strong>Para compartir<br>2 personas</strong><br>Chorizo, morcilla, pollo, vacío, bife, secreto</p>
-<p class="descr CAT"><strong>Per compartir<br>2 personas</strong><br>Xoriço, morcilla, pollastre, vacio, bife, secreto</p>
-<p class="descr LUK"><strong>To share<br>2 people</strong><br>Chorizo, blood sausage, chicken, Flank Steak, bife, Secreto</p>
-<p class="descr LFR"><strong>Pour partager<br>2 personnes</strong><br>Chorizo, budin noir, poulet, bavette, hampe, secreto</p>
-</div>
-</div>
-
-
-<div>
-
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">&nbsp;</div><div class="principal preciolista">&nbsp;</div></div>
-<div class="descr LES CAT LUK LFR LDE LNE LRU"><strong>Extras</strong></div>
-<div class="flexbox" style="line-height: 0%;"><div class="principal LES CAT LUK LFR LDE LNE LRU">&nbsp;</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">&nbsp;</div></div>
-
-
-<div class="listado LES">
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Guarnición ensalada</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Pan unidad</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,90&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Extra chimichurri / criolla</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal -C ultimalinea LES CAT LUK LFR LDE LNE LRU">Nuestras carnes se sirven con:<br>patatas asadas y verdura<br>chimichurri – salsa criolla </div></div>
-</div>
-
-<div class="listado CAT">
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Guarnició amanida</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Pa unitat</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,90&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Extra Chimichurri / Criolla</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal -C ultimalinea LES CAT LUK LFR LDE LNE LRU">Les nostres carns es serveixen amb:<br>Patates caliu i verdures<br>chimichurri – salsa criolla </div></div>
-</div>
-
-<div class="listado LUK">
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Salad garnish</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Bread piece</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,90&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Extra Chimichurri / Criolla</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal  -C ultimalinea LES CAT LUK LFR LDE LNE LRU">Our meets are served with:<br>grill potatoes and vegetables<br>chimichurri – salsa criolla </div></div>
-</div>
-
-
-<div class="listado LFR">
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Garniture de salade</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Pain unité</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,90&nbsp;€</div></div>
-<div class="flexbox"><div class="principal LES CAT LUK LFR LDE LNE LRU">Extra Chimichurri / Criolla</div><div class="principal preciolista LES CAT LUK LFR LDE LNE LRU">0,95&nbsp;€</div></div>
-<div class="flexbox"><div class="principal -C ultimalinea LES CAT LUK LFR LDE LNE LRU">Nos viandes sont servies avec:<br>pommes de terres au fours et légumes<br>chimichurri – salsa criolla </div></div>
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="menuitem lastline LES CAT LUK LFR LDE LNE LRU"></div>
-</div>
-<!--FIN CUADRO PARRILLA-->
-<div><img src="https://akidaniel.github.io/menupetxines/imagenes/BLANK.gif" alt="Espacio"width="10" height="20" align="center" border="0" style="display:block"/></div>
 
 
 <!--CUADRO MENU 2 PERSONAS-->
@@ -1457,17 +905,23 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 
 
 </div>
-</div>
+
 <!--FIN COMIDAS-->
 
 
 <!--MENU DE VINOS-->
 <div class="menudevinos">
+
+
 <div class="cartadevinos TITLE">
+
+<div class="menuitem topimage LES LUK LFR CAT LDE LNE LRU" style="background-image: url(https://akidaniel.github.io/menupetxines/imagenes/frontpetxines2.jpeg); height:227px; background-size:contain; "></div>
+<div class="menuitemcontainer TITLE">
+
 <header id="LES" class="SUBTITULO bebidas LES" style="color: #803a30;">Carta de vinos</header>
 <header id="CAT" class="SUBTITULO bebidas CAT" style="color: #803a30;">Carta de vins</header>
 <header id="LUK" class="SUBTITULO bebidas LUK" style="color: #803a30;">Wine List</header>
-<header id="LFR" class="SUBTITULO bebidas LFR" style="color: #803a30;">Carte de vins</header>
+<header id="LFR" class="SUBTITULO bebidas LFR" style="color: #803a30;">Carte de vins</header></div>
 </div>
 
 <div class="cartadevinos">
@@ -2059,10 +1513,14 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <!--MENU DE POSTRES-->
 <div class="menudepostres">
 <div class="cartadepostres TITLE">
+
+
+<div class="menuitem topimage LES LUK LFR CAT LDE LNE LRU" style="background-image: url(https://akidaniel.github.io/menupetxines/imagenes/frontpetxines3.jpeg); height:227px; background-size:contain; "></div>
+<div class="menuitemcontainer TITLE">
 <header id="LES" class="SUBTITULO desserts LES" style="color: #803a30;">Carta de postres</header>
 <header id="CAT" class="SUBTITULO desserts CAT" style="color: #803a30;">Carta de postres</header>
 <header id="LUK" class="SUBTITULO desserts LUK" style="color: #803a30;">Desserts Menu</header>
-<header id="LFR" class="SUBTITULO desserts LFR" style="color: #803a30;">Menu Dessert</header>
+<header id="LFR" class="SUBTITULO desserts LFR" style="color: #803a30;">Menu Dessert</header></div>
 </div>
 
 <!--CUADRO GIN TONIC-->
@@ -2242,6 +1700,8 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div><img src="https://akidaniel.github.io/menupetxines/imagenes/BLANK.gif" alt="Espacio" width="10" height="20" align="center" border="0" style="display:block"/></div>
 <!--CUADRO POSTRES-->
 <div class="cartadepostres">
+
+
 <div class="menuitem LES CAT">Postres <img src="https://akidaniel.github.io/menupetxines/imagenes/dessert.png" alt="Postres" border="0" width="28px" style="vertical-align:middle;"></div>
 <div class="menuitem LUK LFR">Desserts <img src="https://akidaniel.github.io/menupetxines/imagenes/dessert.png" alt="Postres" border="0" width="28px" style="vertical-align:middle;"></div>
 <div>
@@ -2250,6 +1710,7 @@ Tous nos plats sont préparés à l'instant. Détendez-vous et profitez du mome
 <div class="descr LUK"><strong>HOMEMADE</strong></div>
 <div class="descr LFR"><strong>FAIT MAISON</strong></div>
 </div>
+
 <div class="flexbox lista">
 <div class="layer show"></div>
 
