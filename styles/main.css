@@ -23,7 +23,7 @@ text-align:left;
 
 .pagina {box-sizing:border-box;
 padding:0;
-background:url(https://akidaniel.github.io/menucatalina/imagenes/fondo.jpg)}
+background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
  
 .wrapper {overflow-x:hidden; position: relative; padding: 0 3px;}
 
@@ -121,7 +121,7 @@ margin: 0 0.25rem;
 	z-index: 1500;
 	right: 0.5rem;
 	bottom: 0rem;
-	background: url(https://akidaniel.github.io/menucatalina/imagenes/bt_top.png) no-repeat center 43%;
+	background: url(https://akidaniel.github.io/menupetxines/imagenes/bt_top.png) no-repeat center 43%;
 	background-size: contain;
 }
 
@@ -291,13 +291,13 @@ background-size:contain;
 cursor: pointer;
 margin: 0 2rem;
 z-index:222;}
-.UK {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/uk.png);}
-.ES {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/spain.png);}
-.FR {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/france.png);}
-.CT {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/catalan.png);}
-.DE {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/alemania.png);}
-.NE {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/holanda.png);}
-.RU {background-image: url(https://akidaniel.github.io/menucatalina/imagenes/ruso.png);}
+.UK {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/uk.png);}
+.ES {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/spain.png);}
+.FR {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/france.png);}
+.CT {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/catalan.png);}
+.DE {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/alemania.png);}
+.NE {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/holanda.png);}
+.RU {background-image: url(https://akidaniel.github.io/menupetxines/imagenes/ruso.png);}
 
 .platos, .vinos, .postres {display: block;
 	width: 4.5rem;
@@ -307,9 +307,9 @@ z-index:222;}
 	z-index: 999;
 	cursor: pointer;
 }
-.platos {background: url(https://akidaniel.github.io/menucatalina/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
-.vinos {background: url(https://akidaniel.github.io/menucatalina/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
-.postres {background: url(https://akidaniel.github.io/menucatalina/imagenes/dess_icon.png) no-repeat center 43%; background-size: contain;}
+.platos {background: url(https://akidaniel.github.io/menupetxines/imagenes/menu_icon.png) no-repeat center 43%; background-size: contain;}
+.vinos {background: url(https://akidaniel.github.io/menupetxines/imagenes/wine_icon.png) no-repeat center 43%; background-size: contain;}
+.postres {background: url(https://akidaniel.github.io/menupetxines/imagenes/dess_icon.png) no-repeat center 43%; background-size: contain;}
 
 .dish-2 div {text-align: right;}
 
