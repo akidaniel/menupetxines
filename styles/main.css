@@ -235,7 +235,9 @@ font-size:14px; text-align:center; margin: 10px 3px 0; line-height: 125%;
    background-color: #864138;
     font-weight: bold;
     color: #FFFFFF;
-    bottom:0.05rem;;
+    bottom:0.05rem;
+	width: fit-content;
+    float: left;
 }
 
 .numeroplato {
