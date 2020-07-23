@@ -23,9 +23,10 @@ text-align:left;
 
 .pagina {box-sizing:border-box;
 padding:0;
-background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
+background:url(https://akidaniel.github.io/menupetxines/imagenes/zocalo.png) left bottom no-repeat, url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg) left top repeat;
+background-size: contain, auto;}
  
-.wrapper {overflow-x:hidden; position: relative; padding: 0 3px; background-image: url(https://akidaniel.github.io/menupetxines/imagenes/zocalo.png); background-origin:border-box; background-repeat:no-repeat; background-position: bottom; background-position-x: left; background-size: contain;
+.wrapper {overflow-x:hidden; position: relative; padding: 0 3px; /*background-image: url(https://akidaniel.github.io/menupetxines/imagenes/zocalo.png); background-origin:border-box; background-repeat:no-repeat; background-position: bottom; background-position-x: left; background-size: contain;*/
 }
 
 .CENTER {
@@ -382,7 +383,7 @@ a.FINDUS {text-decoration: none;}
     }
 .FINDUS {top:0;}
 
-.wrapper {background-size: 300%;}
+.pagina {background-size: 300%, auto;;}
 
 }
 
