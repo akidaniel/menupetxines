@@ -316,7 +316,7 @@ z-index: 12;
 padding-bottom: 1rem;
 }
 
-.expandish img {width: 300px; /**padding: 15px 0 0 0;**/}
+.expandish img {width: 300px;}
 
 	
 .expandish .pricex3 {left:20%; position: relative;}
@@ -330,7 +330,7 @@ padding-bottom: 1rem;
 
 .-L {text-align:left;}
 .-C {text-align:center!important; }
-.menuitemcontainer.TITLE, .cartadevinos.TITLE, .cartadepostres.TITLE {margin: 3rem auto 0;}
+.menuitemcontainer.TITLE, .cartadevinos.TITLE, .cartadepostres.TITLE {margin: 1rem auto 0;}
 .wine {text-align: center!important;}
 .wine img {height: 230px; padding:0}
 .expandish .wine img {width:unset; height: unset; }
@@ -350,7 +350,7 @@ a.FINDUS {text-decoration: none;}
 
 .menuitemcontainer { -moz-box-shadow: #223139 0 0 4px; -webkit-box-shadow: #223139 0 0 4px; box-shadow: #223139 0 0 4px; }
 .UK, .ES, .FR, .CT, .DE, .NE, .RU {margin: 0 0.5rem; width: 3rem; height:5rem;}
-.BOTONERA {top: 4.5rem;}
+.BOTONERA {top: 0.5rem;}
 .expandish {min-width: 98%;}
 /**FONDO DE COLOR**/
 .layer {background-color: rgba(134, 65, 56, 0.7);
@@ -384,6 +384,7 @@ a.FINDUS {text-decoration: none;}
 .FINDUS {top:0;}
 
 .pagina {background-size: 300%, auto;;}
+.menuitemcontainer.TITLE, .cartadevinos.TITLE, .cartadepostres.TITLE {margin: -1rem auto 0;}
 
 }
 
