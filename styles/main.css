@@ -37,7 +37,7 @@ background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
 /*TEXTOS*/
 
 .SUBTITULO{font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size:2.9rem;
+font-size:3rem;
 text-align:center;
 line-height: 2.5rem;
 margin: 0 0 1rem;
@@ -360,8 +360,6 @@ a.FINDUS {text-decoration: none;}
 }
 .show {display:none;}
 /**FIN FONDO DE COLOR**/
-
-
 	
 /**.price {left:30%}
 .expandish .price {display: unset;}
