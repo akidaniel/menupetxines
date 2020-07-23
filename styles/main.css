@@ -36,7 +36,7 @@ background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
 
 /*TEXTOS*/
 
-.SUBTITULO{font-family: 'Almendra', serif;
+.SUBTITULO{font-family: 'Yanone Kaffeesatz', sans-serif;
 font-size:3rem;
 text-align:center;
 line-height: 2.5rem;
@@ -161,8 +161,8 @@ margin:2rem 0 1rem 0;
 width:100%;}
 
 .menuitemcontainer, .cartadevinos, .cartadepostres {max-width: 580px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px; margin: 0 auto; -moz-box-shadow: #223139 0 0 5px; -webkit-box-shadow: #223139 0 0 5px; box-shadow: #223139 0 0 5px; }
-.menuitem { font-family: 'Almendra', serif; font-weight: bold;
- font-size: 24px; color: #803a30; text-align: center; padding: 8px 0 10px 0; border-bottom: 2px solid #afafaf; margin: 0 auto; 
+.menuitem { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: bold;
+ font-size: 36px; color: #803a30; text-align: center; padding: 8px 0 10px 0; border-bottom: 2px solid #afafaf; margin: 0 auto; 
 }
 
 	
@@ -179,8 +179,8 @@ width:100%;}
 .principal {
 background: ;
 flex: 1;
-font-family: 'Almendra', serif;
-font-size:18px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size:22px;
 padding: 5px 5px 2px 5px; border-bottom: 2px dotted #ccc;
 color:#454545;
 }
@@ -192,31 +192,20 @@ color:#454545;
 .dish-2 {text-align: center; margin: 1.5rem auto 0; width:49%; z-index:10;}
 .dish-3 {text-align: center; margin: 1.5rem auto 0; width:32%; z-index:10;}
 .dish-2 img, .dish-3 img {max-height: 100%; max-width: 100%;}
-.destacado {font-family: 'Almendra', serif;
+.destacado {font-family: 'Yanone Kaffeesatz', sans-serif;
 text-align:left;
 font-size:17px; font-weight: normal;}
 .descr {font-family: 'Gothic A1', sans-serif; font-weight: normal;
 font-size:14px; text-align:center; margin: 10px 3px 0; line-height: 125%;
 }
-.menuitem.plato {font-size:20px; border-bottom: none; line-height: 100%; padding:0;}
+.menuitem.plato {font-size:26px; border-bottom: none; line-height: 100%; padding:0;}
 .price {position: relative;
- font-family: 'Almendra', serif;
-
- font-size: 18px; /*width:fit-content;-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    padding: 4px 10px;
-    background-color: #7B7E97;
-    font-weight: bold; bottom: 15px; color: white;
-    
-   
-    left: 60%;
- display: block;
-    width: 50px; text-align: unset;*/right:10%;
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-size: 18px; 
+ line-height:150%;
+ right:10%;
    }
    
-
-	
 	
 .dishphoto {text-align:center!important}
 
