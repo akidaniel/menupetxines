@@ -25,7 +25,8 @@ text-align:left;
 padding:0;
 background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
  
-.wrapper {overflow-x:hidden; position: relative; padding: 0 3px;}
+.wrapper {overflow-x:hidden; position: relative; padding: 0 3px; background-image: url(https://akidaniel.github.io/menupetxines/imagenes/zocalo.png); background-origin:border-box; background-repeat:no-repeat; background-position: bottom; background-position-x: left; background-size: contain;
+}
 
 .CENTER {
   -ms-flex-pack: center;
@@ -380,6 +381,9 @@ a.FINDUS {text-decoration: none;}
 	right:unset;
     }
 .FINDUS {top:0;}
+
+.wrapper {background-size: 300%;}
+
 }
 
 @media only screen and (min-width:901px) {
