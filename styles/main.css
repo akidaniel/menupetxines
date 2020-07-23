@@ -37,7 +37,7 @@ background:url(https://akidaniel.github.io/menupetxines/imagenes/fondo.jpg)}
 /*TEXTOS*/
 
 .SUBTITULO{font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size:3rem;
+font-size:2.9rem;
 text-align:center;
 line-height: 2.5rem;
 margin: 0 0 1rem;
@@ -150,6 +150,7 @@ justify-content: space-evenly;
 .preciolista {
   flex: 0 0 80px;
   text-align:right;
+  font-size: 20px!important;
 }
 
 .languecontainer {position:absolute;
@@ -170,10 +171,10 @@ width:100%;}
 
 .ultimalinea {border:none}
 .menudevinos, .menudepostres {display:none}
-.bebidas, .desserts  {marging: 0rem!important; margin-top:-2.5rem!important;}
+.bebidas, .desserts  {marging: 0rem!important; margin-top:-2rem!important;}
 
 
-.topimage {background-position: center center; -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius:10px; -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius:10px; border-bottom: 1px solid #BE9A91; padding: 0.5rem 0 0; margin-bottom: 1rem;}
+.topimage {background-position: center center; -moz-border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius:10px; -moz-border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius:10px; border-bottom: none; padding: 0.5rem 0 0; margin-bottom: 1rem;}
 .topimage img {float:right;}
 
 .principal {
@@ -198,10 +199,10 @@ font-size:17px; font-weight: normal;}
 .descr {font-family: 'Gothic A1', sans-serif; font-weight: normal;
 font-size:14px; text-align:center; margin: 10px 3px 0; line-height: 125%;
 }
-.menuitem.plato {font-size:26px; border-bottom: none; line-height: 100%; padding:0;}
+.menuitem.plato {font-size:26px; border-bottom: none; line-height: 100%; padding:0; margin: 0 auto -0.40rem;}
 .price {position: relative;
  font-family: 'Yanone Kaffeesatz', sans-serif;
- font-size: 18px; 
+ font-size: 20px; 
  line-height:150%;
  right:10%;
    }
