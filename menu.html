@@ -11,11 +11,8 @@
 <meta property="og:title" content="Menú Les Petxines" />
 <meta property="og:url" content="https://akidaniel.github.io/menupetxines/menu" />
 <meta property="og:image" content="https://akidaniel.github.io/menupetxines/imagenes/frontpetxines1.jpg"/>
-<meta property="og:description" content="Menú Les Petxines comidas y menúes en el paseo marítimo de Lloret de Mar" />
+<meta property="og:description" content="Menú Les Petxines restauran mediterráneo, comidas y menúes en el paseo marítimo de Lloret de Mar" />
   
-
-
-
 <LINK REL="SHORTCUT ICON" HREF="https://akidaniel.github.io/menupetxines/imagenes/favicons/favicon.ico">
 <link rel="icon" href="https://akidaniel.github.io/menupetxines/imagenes/favicons/favicon.ico" type="image/x-icon" />
 
@@ -26,121 +23,7 @@
 <title>Menú Les Petxines</title>
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-var icons = [
-			"https://akidaniel.github.io/menupetxines/imagenes/favicons/apple-icon-180x180.png",
-                "https://akidaniel.github.io/menupetxines/imagenes/favicons/favicon-32x32.png",
-                "https://akidaniel.github.io/menupetxines/imagenes/favicons/favicon.ico",
-            ];
-
-            var idx = localStorage["favicon"];
-            if (idx === undefined) {
-                idx = 0;
-            } else {
-                idx = parseInt(idx);
-            }
-
-            localStorage["favicon"] = (idx + 1) % icons.length;
-
-            var link = document.createElement('link');
-            link.type = 'image/x-icon';
-            link.rel = 'icon';
-            link.href = icons[idx];
-            document.getElementsByTagName('head')[0].appendChild(link);
-</script>
-
-
-
-
-<script>
-$(document).ready(function() {
-
-var display = function(block_name) {
-  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal').css('display', 'none');
-  $('#' + block_name).css('display', 'block');
-  $('.' + block_name).css('display', 'block');
-}
-
-$('.UK').on('click', function() {
-  display('LUK', $(this));
-});
-
-$('.ES').on('click', function() {
-  display('LES', $(this));
-});
-
-$('.CT').on('click', function() {
-  display('CAT', $(this));
-});
-
-
-$('.FR').on('click', function() {
-  display('LFR', $(this));
-});
-
-$('.DE').on('click', function() {
-  display('LDE', $(this));
-});
-
-
-$('.NE').on('click', function() {
-  display('LNE', $(this));
-});
-
-$('.RU').on('click', function() {
-  display('LRU', $(this));
-});
-
-});
-</script>
-
-<script>
-$(document).ready(function() {
-
-var display = function(block_name) {
-  $('.menudecomidas, .menudevinos, .menudepostres').css('display', 'none');
-  $('#' + block_name).css('display', 'block');
-  $('.' + block_name).css('display', 'block');
-}
-
-$('.platos').on('click', function() {
-  display('menudecomidas', $(this));
-});
-
-$('.vinos').on('click', function() {
-  display('menudevinos', $(this));
-});
-
-$('.postres').on('click', function() {
-  display('menudepostres', $(this));
-});
-
-});
-</script>
-<script>
-$(document).ready(function() {
-$('.dish-2, .dish-3').click(function() {
-  $(this).toggleClass('expandish');
-    $(this).siblings(".show").toggle();
-	    $('.show').css('z-index', '11')
-
-
-});
-
-/*$('img').bind('contextmenu', function(e) {
-    return false;
-}); */
-
-$('.dish-2, .dish-3').mouseleave(function() {
-  $(this).removeClass('expandish');
-	    $('.show').css('z-index', '0');
-			    $('.show').css('display', 'none');
-
-});
-
-
-});
-</script>
+<script src="scripts/script.js"/></script>
 
 <style>
 
